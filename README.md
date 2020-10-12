@@ -35,6 +35,6 @@ getURL().then((res) => console.log(res)); // { location:: 'http://download.fshar
 
 ## Methods
 
-- [x] login(): Login fshare with you account
-- [x] download(token, session, url): Download file with user logged
+- [x] login(account): Login fshare with your account
+- [x] download(token, session, url): Download file with logged
 - [ ] upload
