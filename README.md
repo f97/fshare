@@ -29,7 +29,7 @@ const getURL = async (account) => {
   return url;
 };
 
-getURL().then((res) => console.log(res)); // { location:: 'http://download802.fshare.vn/dl/KA6H...' }
+getURL().then((res) => console.log(res)); // { location:: 'http://download.fshare.vn/dl/xxx...' }
 
 ```
 
