@@ -9,6 +9,7 @@ Install it with yarn or npm
 
 ```bash
 yarn add fsharedk
+# Or
 npm install -save fsharedk
 ```
 
@@ -17,28 +18,23 @@ Usage
 ```javascript
 const fsharedk = require('fsharedk')
 
-const user = {
-    user_email: process.env.FSHARE_EMAIL,
-    password:  process.env.FSHARE_PASSWORD
+const account = {
+    user_email: 'email@example.com',
+    password:  'password'
 }
 
-const getDownloadFshareURL = async (account) => {
-  const { token, session_id: sessionID } = await fsharedk.login(user);
-  const url = await fsharedk.download(token, sessionID, 'https://www.fshare.vn/file/xxxx...');
+const getURL = async (account) => {
+  const { token, session_id: session } = await fsharedk.login(account);
+  const url = await fsharedk.download(token, session, 'https://www.fshare.vn/file/xxxx...');
   return url;
 };
 
-getDownloadFshareURL().then(console.log); //{ location:: 'http://download802.fshare.vn/dl/KA6H...' }
+getURL().then((res) => console.log(res)); // { location:: 'http://download802.fshare.vn/dl/KA6H...' }
 
 ```
 
 ## Methods
 
-- login(): Login fshare with you account
-- download(res, url): Downloaf file with user logged
-
-## Todo
-
-- [x] Allow download and login
-- [ ] Support normal user.
-- [ ] ...
+- [x] login(): Login fshare with you account
+- [x] download(res, url): Download file with user logged
+- [ ] upload
