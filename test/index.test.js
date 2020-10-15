@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const login = require('../lib/login');
+const login = require('../lib');
 
 const user = {
   user_email: process.env.FSHARE_EMAIL,

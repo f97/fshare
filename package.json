@@ -2,10 +2,10 @@
     "name": "fsharedk",
     "version": "1.0.0",
     "description": "Unofficial Node.js SDK for fshare.vn",
-    "main": "lib/login.js",
+    "main": "lib/index.js",
     "scripts": {
         "test": "jest --detectOpenHandles",
-        "start": "node lib/login.js"
+        "start": "node lib/index.js"
     },
     "repository": {
         "type": "git",
