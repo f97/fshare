@@ -1,33 +1,33 @@
 {
     "name": "fsharedk",
-    "version": "0.0.7",
+    "version": "1.0.0",
     "description": "Unofficial Node.js SDK for fshare.vn",
     "main": "lib/login.js",
     "scripts": {
         "test": "jest --detectOpenHandles",
-        "start": "node lib/fshare.js"
+        "start": "node lib/login.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/f97/fshare.git"
+        "url": "git+https://github.com/f97/fsharedk.git"
     },
     "keywords": [],
     "author": "Huynh Duc Khoan <huynhduckhoan@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/f97/fshare/issues"
+        "url": "https://github.com/f97/fsharedk/issues"
     },
-    "homepage": "https://github.com/f97/fshare#readme",
+    "homepage": "https://github.com/f97/fsharedk#readme",
     "dependencies": {
         "cheerio": "^1.0.0-rc.3",
         "request": "^2.88.2",
         "request-promise": "^4.2.6"
     },
     "devDependencies": {
-        "eslint": "^7.9.0",
+        "eslint": "^7.11.0",
         "eslint-config-airbnb-base": "^14.2.0",
-        "eslint-plugin-import": "^2.22.0",
-        "jest": "^26.4.2"
+        "eslint-plugin-import": "^2.22.1",
+        "jest": "^26.5.3"
     },
     "eslintConfig": {
         "extends": "airbnb-base",
