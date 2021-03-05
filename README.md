@@ -1,7 +1,12 @@
 # FshareDK
 
-Unofficial Node.js SDK for fshare.vn and tool only support premium user. (By fshare after 09/2019)
+Unofficial Node.js SDK for fshare.vn and tool only support premium user. 
 
+-------
+
+## Fshare has already published API, so I will soon make a comprehensive API for Fshare's published API, expected to publish at the end of June.
+
+-------
 
 ## Usage
 
